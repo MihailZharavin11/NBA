@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeImage } from "../components/Home/HomeImage/HomeImage";
+import { HomeImage } from "../components/Home/PhotoScreen/PhotoScreen";
 
 export const Home = () => {
   return (

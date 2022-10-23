@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ImageProps } from "../home.types";
+import { ImageProps } from "../../home.types";
 import styles from "./image.module.scss";
 
 export const Image: FC<ImageProps> = ({ src, alt }) => {

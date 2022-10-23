@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ImageBlockProps } from "../home.types";
+import { ImageBlockProps } from "../../home.types";
 import { Image } from "../Image/Image";
 import styles from "./imageBlock.module.scss";
 

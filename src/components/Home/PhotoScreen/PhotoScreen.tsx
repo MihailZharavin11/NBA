@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import styles from "./homeImage.module.scss";
+import React from "react";
+import styles from "./photoScreen.module.scss";
 import { Lebron, Rose, Irving, Jordan } from "../../../images";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
-import { ImageBlock } from "../ImageBlock/ImageBlock";
+import { ImageBlock } from "./ImageBlock/ImageBlock";
 export const HomeImage = () => {
   const { scrollYProgress } = useScroll();
   const yVal = useTransform(scrollYProgress, [0, 1], ["0px", "1200px"]);
