@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { ImageBlock } from "./ImageBlock/ImageBlock";
 export const HomeImage = () => {
   const { scrollYProgress } = useScroll();
-  const yVal = useTransform(scrollYProgress, [0, 1], ["0px", "1200px"]);
+  const yVal = useTransform(scrollYProgress, [0, 1], ["0px", "1370px"]);
 
   return (
     <div className={styles.homeImageWrapper}>

@@ -13,7 +13,7 @@ export const ImageBlock: FC<ImageBlockProps> = ({
 }) => {
   const [move, setMove] = useState(false);
   const { scrollYProgress } = useScroll();
-  const yVal = useTransform(scrollYProgress, [0, 1], ["0px", "-500px"]);
+  const yVal = useTransform(scrollYProgress, [0, 1], ["0px", "-200px"]);
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     if (move) {
