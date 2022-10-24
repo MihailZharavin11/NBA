@@ -1,0 +1,11 @@
+.gamesSection {
+  height: 100vh;
+  background-color: black;
+}
+
+.boxGames {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  gap: 10px;
+}

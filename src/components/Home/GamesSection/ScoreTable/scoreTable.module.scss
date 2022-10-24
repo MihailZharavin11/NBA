@@ -1,0 +1,24 @@
+.scoreTable {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.infoTeam {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+}
+
+.score {
+  font-size: 36px;
+  font-weight: 600px;
+}
+
+.infoTeam:first-child {
+  margin-right: 50px;
+}

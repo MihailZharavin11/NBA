@@ -1,3 +1,4 @@
+@use "../../sass/abstracts/variables";
 .header {
   position: sticky;
   top: 0;
@@ -9,4 +10,11 @@
   padding: 20px 70px;
   background-color: black;
   color: white;
+  @media (max-width: variables.$layout-breakpoint-medium) {
+  }
+  @media (max-width: variables.$layout-breakpoint-small) {
+    padding: 20px 40px;
+  }
+  @media (max-width: variables.$layout-breakpoint-xsmall) {
+  }
 }

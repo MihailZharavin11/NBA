@@ -2,6 +2,7 @@ import React from "react";
 import { Home } from "./pages/Home";
 import { Header } from "./shared/Header/Header";
 import "./App.css";
+import "./sass/main.scss";
 
 function App() {
   return (
