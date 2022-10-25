@@ -1,4 +1,5 @@
 @use "../../../../sass/abstracts/variables";
+@import "../../../../sass/abstracts/variables";
 
 .team {
   display: flex;
@@ -10,7 +11,7 @@
   text-align: center;
 
   .teamName {
-    font-size: calc(13px + (18 - 13) * (100vw - 320px) / (1440 - 320));
+    @include adaptive-FS(13, 18);
     @media (max-width: variables.$layout-breakpoint-small) {
       line-height: 15px;
     }
@@ -26,6 +27,6 @@
     }
   }
   .teamScore {
-    font-size: calc(13px + (15 - 13) * (100vw - 320px) / (1440 - 320));
+    @include adaptive-FS(13, 15);
   }
 }

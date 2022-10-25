@@ -1,4 +1,6 @@
 @use "../../../sass/abstracts/variables";
+@import "../../../sass/abstracts/variables";
+
 .homeImageWrapper {
   height: 100vh;
   width: 100%;
@@ -13,14 +15,8 @@
 .homeImageTitle {
   color: white;
   font-family: "Cyrvetica";
-  font-size: calc(50px + 187 * (100vw / 1440));
+  @include adaptive-FS(50, 237);
   letter-spacing: 0.07em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 10;
-  @media (max-width: variables.$layout-breakpoint-medium) {
-    font-size: calc(40px + 187 * (100vw / 1440));
-  }
-  @media (max-width: variables.$layout-breakpoint-small) {
-    font-size: calc(50px + (187 + 187 * 0.4) * ((100vw - 320px) / 1440));
-  }
 }

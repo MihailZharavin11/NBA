@@ -1,4 +1,6 @@
 @use "../../../../sass/abstracts/variables";
+@import "../../../../sass/abstracts/variables";
+
 .scoreTable {
   display: flex;
   justify-content: space-between;
@@ -24,7 +26,7 @@
 }
 
 .score {
-  font-size: calc(21px + (36 - 21) * (100vw - 320px) / (1440 - 320));
+  @include adaptive-FS(21, 36);
   font-weight: 600px;
 }
 

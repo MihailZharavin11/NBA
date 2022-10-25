@@ -1,4 +1,6 @@
 @use "../../../sass/abstracts/variables";
+@import "../../../sass/abstracts/variables";
+
 .titleWrapper {
   display: flex;
   justify-content: space-between;
@@ -18,7 +20,7 @@
   font-family: "Cyrvetica";
   font-style: normal;
   font-weight: 400;
-  font-size: calc(30px + (90 - 30) * (100vw - 320px) / (1440 - 320));
+  @include adaptive-FS(30, 90);
   line-height: 105px;
   letter-spacing: 0.07em;
   color: #ffffff;
@@ -31,7 +33,7 @@
   max-width: 325px;
   font-style: normal;
   font-weight: 400;
-  font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1440 - 320));
+  @include adaptive-FS(14, 24);
   line-height: 28px;
   text-align: center;
   color: #ffffff;
