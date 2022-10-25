@@ -1,3 +1,4 @@
+@use "../../../../sass/abstracts/variables";
 .scoreTable {
   display: flex;
   justify-content: space-between;
@@ -5,6 +6,11 @@
   border: 1px solid white;
   border-radius: 20px;
   padding: 10px 20px;
+  @media (max-width: variables.$layout-breakpoint-small) {
+    justify-content: flex-start;
+    width: 50%;
+    padding: 5px 15px;
+  }
 }
 
 .infoTeam {
@@ -12,13 +18,19 @@
   align-items: center;
   gap: 20px;
   color: #fff;
+  @media (max-width: variables.$layout-breakpoint-small) {
+    gap: 5px;
+  }
 }
 
 .score {
-  font-size: 36px;
+  font-size: calc(21px + (36 - 21) * (100vw - 320px) / (1440 - 320));
   font-weight: 600px;
 }
 
 .infoTeam:first-child {
   margin-right: 50px;
+  @media (max-width: variables.$layout-breakpoint-small) {
+    margin-right: 10px;
+  }
 }

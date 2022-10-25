@@ -1,14 +1,31 @@
+@use "../../../../sass/abstracts/variables";
+
 .team {
   display: flex;
   height: 100%;
   flex-direction: column;
   align-items: center;
   color: #fff;
-  font-size: 16px;
-  line-height: 25px;
   gap: 5px;
   text-align: center;
+
+  .teamName {
+    font-size: calc(13px + (18 - 13) * (100vw - 320px) / (1440 - 320));
+    @media (max-width: variables.$layout-breakpoint-small) {
+      line-height: 15px;
+    }
+  }
+
+  @media (max-width: variables.$layout-breakpoint-small) {
+    justify-content: center;
+  }
+
+  .teamImage {
+    @media (max-width: variables.$layout-breakpoint-small) {
+      width: 10vw;
+    }
+  }
   .teamScore {
-    font-size: 15px;
+    font-size: calc(13px + (15 - 13) * (100vw - 320px) / (1440 - 320));
   }
 }

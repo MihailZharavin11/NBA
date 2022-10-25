@@ -1,3 +1,5 @@
+@use "../../../sass/abstracts/variables";
+
 .buttonWrapper {
   display: flex;
   justify-content: center;
@@ -8,9 +10,19 @@
     background: transparent;
     color: white;
     font-weight: 400;
-    font-size: 28px;
+    font-size: calc(14px + (28 - 14) * (100vw - 320px) / (1440 - 320));
     line-height: 32px;
     padding: 14px 35px;
     cursor: pointer;
+    @media (max-width: variables.$layout-breakpoint-large) {
+    }
+    @media (max-width: variables.$layout-breakpoint-medium) {
+    }
+    @media (max-width: variables.$layout-breakpoint-small) {
+      padding: 8px 25px;
+    }
+    @media (max-width: variables.$layout-breakpoint-xsmall) {
+      padding: 5px 15px;
+    }
   }
 }

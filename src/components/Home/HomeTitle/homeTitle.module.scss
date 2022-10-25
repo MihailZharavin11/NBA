@@ -1,25 +1,41 @@
+@use "../../../sass/abstracts/variables";
 .titleWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 70px;
+  @media (max-width: variables.$layout-breakpoint-small) {
+    padding: 0px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  @media (max-width: variables.$layout-breakpoint-xsmall) {
+  }
 }
 
 .title {
   font-family: "Cyrvetica";
   font-style: normal;
   font-weight: 400;
-  font-size: 90px;
+  font-size: calc(30px + (90 - 30) * (100vw - 320px) / (1440 - 320));
   line-height: 105px;
   letter-spacing: 0.07em;
   color: #ffffff;
+  @media (max-width: variables.$layout-breakpoint-small) {
+    line-height: 50px;
+  }
 }
 
 .text {
   max-width: 325px;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: calc(14px + (24 - 14) * (100vw - 320px) / (1440 - 320));
   line-height: 28px;
+  text-align: center;
   color: #ffffff;
+  @media (max-width: variables.$layout-breakpoint-small) {
+    text-align: start;
+  }
 }
