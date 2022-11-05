@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "./photoScreen.module.scss";
-import { Lebron, Rose, Irving, Jordan } from "../../../images";
+import {
+  LebronPhoto,
+  RosePhoto,
+  IrvingPhoto,
+  JordanPhoto,
+} from "../../../images";
 import { useScroll, useTransform } from "framer-motion";
 import { motion } from "framer-motion";
 import { ImageBlock } from "./ImageBlock/ImageBlock";
@@ -13,21 +18,21 @@ export const HomeImage = () => {
       <ImageBlock
         duration={1.6}
         direction={-100}
-        src={Lebron}
+        src={LebronPhoto}
         alt="image-1"
         id="image-1"
       />
       <ImageBlock
         duration={1.6}
         direction={-200}
-        src={Rose}
+        src={RosePhoto}
         alt="image-2"
         id="image-2"
       />
       <ImageBlock
         duration={1.6}
         direction={180}
-        src={Irving}
+        src={IrvingPhoto}
         alt="image-3"
         id="image-3"
       />
@@ -35,7 +40,7 @@ export const HomeImage = () => {
       <ImageBlock
         duration={1.6}
         direction={400}
-        src={Jordan}
+        src={JordanPhoto}
         alt="image-4"
         id="image-4"
       />

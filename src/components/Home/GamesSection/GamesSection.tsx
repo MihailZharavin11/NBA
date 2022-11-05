@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { HomeTitle } from "../HomeTitle/HomeTitle";
 import styles from "./gamesSection.module.scss";
 import {
