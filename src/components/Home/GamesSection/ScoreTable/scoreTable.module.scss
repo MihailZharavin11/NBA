@@ -3,13 +3,22 @@
 
 .scoreTable {
   display: flex;
+  justify-content: space-around;
   border: 1px solid white;
   border-radius: 20px;
   padding: 10px 20px;
+  min-width: 400px;
+
+  @media (max-width: variables.$layout-breakpoint-medium) {
+    min-width: 350px;
+  }
+
   @media (max-width: variables.$layout-breakpoint-small) {
-    justify-content: flex-start;
-    width: 50%;
-    padding: 5px 15px;
+    min-width: 280px;
+  }
+  @media (max-width: variables.$layout-breakpoint-xsmall) {
+    justify-content: space-between;
+    min-width: 200px;
   }
 }
 
@@ -17,9 +26,10 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  max-width: 50%;
   color: #fff;
   @media (max-width: variables.$layout-breakpoint-small) {
-    gap: 5px;
+    gap: 15px;
   }
 }
 
