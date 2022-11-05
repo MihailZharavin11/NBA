@@ -29,6 +29,8 @@
   cursor: pointer;
   @media (max-width: variables.$layout-breakpoint-small) {
     display: block;
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -41,6 +43,9 @@
   background-color: white;
   height: 3px;
   border-radius: 10%;
+  @media (max-width: variables.$layout-breakpoint-small) {
+    width: 25px;
+  }
 }
 
 .navigationBtn::before {
@@ -51,6 +56,9 @@
   background-color: white;
   height: 3px;
   border-radius: 10%;
+  @media (max-width: variables.$layout-breakpoint-small) {
+    width: 25px;
+  }
 }
 
 .navigationBtn::after {
@@ -61,4 +69,7 @@
   background-color: white;
   height: 3px;
   border-radius: 10%;
+  @media (max-width: variables.$layout-breakpoint-small) {
+    width: 25px;
+  }
 }

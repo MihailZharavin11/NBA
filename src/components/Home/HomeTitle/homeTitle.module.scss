@@ -6,8 +6,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 70px;
+  margin-bottom: 10px;
   @media (max-width: variables.$layout-breakpoint-small) {
-    padding: 0px 10px;
+    padding: 10px 10px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
@@ -25,7 +26,8 @@
   letter-spacing: 0.07em;
   color: #ffffff;
   @media (max-width: variables.$layout-breakpoint-small) {
-    line-height: 50px;
+    margin-bottom: 10px;
+    line-height: 30px;
   }
 }
 
@@ -39,5 +41,6 @@
   color: #ffffff;
   @media (max-width: variables.$layout-breakpoint-small) {
     text-align: start;
+    line-height: 23px;
   }
 }

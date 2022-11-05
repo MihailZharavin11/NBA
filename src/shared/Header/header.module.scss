@@ -17,4 +17,13 @@
   }
   @media (max-width: variables.$layout-breakpoint-xsmall) {
   }
+
+  .headerImg {
+    @media (max-width: variables.$layout-breakpoint-small) {
+      width: 100px;
+    }
+    @media (max-width: variables.$layout-breakpoint-xsmall) {
+      width: 80px;
+    }
+  }
 }
