@@ -16,7 +16,6 @@ import { motion, useInView } from "framer-motion";
 export const PlayersSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  console.log(isInView);
 
   return (
     <div className={styles.playersSection}>
