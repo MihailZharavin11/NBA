@@ -37,7 +37,7 @@
   font-weight: 400;
   @include adaptive-FS(14, 24);
   line-height: 28px;
-  text-align: center;
+  text-align: start;
   color: #ffffff;
   @media (max-width: variables.$layout-breakpoint-small) {
     text-align: start;

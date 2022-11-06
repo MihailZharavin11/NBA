@@ -1,5 +1,6 @@
 import React from "react";
 import { logo } from "../../images";
+import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 import { Navigation } from "../Navigation/Navigation";
 import styles from "./header.module.scss";
 

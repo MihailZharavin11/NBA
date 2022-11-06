@@ -1,0 +1,41 @@
+@use "../../sass/abstracts/variables";
+@import "../../sass/abstracts/variables";
+
+.menuWrapper {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  @media (max-width: variables.$layout-breakpoint-xxl) {
+    display: none;
+    overflow: auto;
+  }
+  @media (max-width: variables.$layout-breakpoint-large) {
+    display: none;
+  }
+  @media (max-width: variables.$layout-breakpoint-medium) {
+    display: none;
+  }
+  @media (max-width: variables.$layout-breakpoint-small) {
+    display: block;
+  }
+}
+
+.listMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
+  padding: 30px;
+  color: white;
+  list-style-type: none;
+  background-color: black;
+  li {
+    cursor: pointer;
+    font-family: "Cyrvetica";
+    font-style: normal;
+    font-weight: 400;
+    @include adaptive-FS(30, 60);
+  }
+}
