@@ -9,9 +9,25 @@
 
 .boxPlayersWrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
+  @media (max-width: variables.$layout-breakpoint-large) {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 10px;
+    &::-webkit-scrollbar-track {
+      background-color: black;
+    }
+    &::-webkit-scrollbar {
+      height: 5px;
+      background-color: #f5f5f5;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: #fefefe;
+    }
+  }
   @media (max-width: variables.$layout-breakpoint-small) {
     padding: 20px;
     justify-content: flex-start;
